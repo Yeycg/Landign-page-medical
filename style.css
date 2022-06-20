@@ -1,0 +1,63 @@
+/* Orden para maquetar
+ propiedades de modelo de caja (display, width height, margin, etc)
+ posicionamiento (position, top, left, rigth, etc)
+ tipografia
+ decoracion (backgraund,color, etc)
+ variables 
+ mixiens
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #20BC7E;
+    --second-color: #FFB87A;
+    --just-black: #000;
+    --just-white: #fff;
+    --grey: #7C7C7C;
+}
+
+header {
+    width: 100%;
+    background-color: var(--just-white);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+
+}
+
+.header-logo p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
